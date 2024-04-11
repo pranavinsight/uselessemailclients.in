@@ -1,0 +1,166 @@
+<!DOCTYPE='html'>
+<head>
+<title>NoInternetConnection-Downloads</title>
+</head>
+<style>
+*{
+font-family: Arial;
+}
+
+.head{
+color: white;
+}
+body {
+  margin: 0;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+.topnav li{
+ list-style: none;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+:root {
+ 
+  --hue: 310; 
+  --hue-adjust: 135;
+
+  --hue-2: calc(var(--hue) + var(--hue-adjust));
+
+  --page-background: oklch(10% 0.0666 var(--hue));
+}
+
+button {
+  --button-background: oklch(20% 0.0666 var(--hue));
+  --text-base: oklch(45% 0.175 var(--hue));
+  --text-hover: oklch(95% 0.145 calc(var(--hue) + 30));
+
+  --shadow-start: oklch(95% 0.145 var(--hue-2));
+  --shadow-end: oklch(60% 0.29 var(--hue));
+
+  
+  --shadow-inner: 60% 0.29 var(--hue);
+
+  all: unset;
+
+ 
+  color: var(--text-base);
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  /* Button sizing */
+  padding: 0.85em;
+  max-width: 100%;
+  width: 12em;
+
+  /* Button styling */
+  background-color: var(--button-background);
+  background-clip: padding-box;
+  border: 5px solid var(--text-base);
+  border-radius: 2em;
+  cursor: pointer;
+
+  /* Effects */
+  position: relative;
+  transition: 0.25s ease-out;
+
+  /* Set up pseudo elements */
+  &::before,
+  &::after {
+    content: "";
+    border-radius: inherit;
+    transition: inherit;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  /* Gradient shadow */
+  &::before {
+    /* Position */
+    inset: -0.2em;
+    z-index: -1;
+
+    /* Effect */
+    background: linear-gradient(var(--shadow-start), var(--shadow-end));
+    filter: blur(1.2em) saturate(1.2);
+
+    /* Animation */
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+    opacity: 0;
+  }
+
+  /* Semi-transparent blended box-shadow brightens up the border */
+  &::after {
+    /* Effect */
+    box-shadow: inset 0 0 0 1px #fff, /* inner pixel */
+      0 0 0 4px hsla(0deg, 0%, 100%, 0.5), /* lightened border */
+      1px 1px 0 4px #fff; /* outer pixel */
+    mix-blend-mode: overlay;
+
+    /* Animation */
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--text-hover);
+
+    /*  Lighten border */
+    border-color: transparent;
+
+    /* Inner shadow */
+    box-shadow:
+      inset 0 1.4em 0 oklch(var(--shadow-inner) / 0.1), /* gloss */
+      inset 0 0 1.4em oklch(var(--shadow-inner) / 0.32), /* inner glow */
+      0 1px 1px oklch(var(--shadow-inner) / 0.32); /* bottom line */
+
+    /* Show effects */
+    &::before,
+    &::after {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}
+
+/* Page styling, ignore */
+@media only screen and (max-width: 60px) {
+  .content {
+    word-break: break-all;
+  }
+}
+</style>
+<div class="topnav">
+<section align=center><h1 class="head">NoInternetConnection.exe(ppt)-Navigation Pane</h1>
+  <a href="NoInternetConnection.html">Home</a></li>
+  <a href="#">Download</a></section>
+</div>
+<h1>DOWNLOADS</h1>
+<p>choose them and Download the email client:</p>
+<a href="NoInternetConnection 1.0.pptx"><button>Download NIC mk1</button></a><a href="NoInternetConnection 2.0.pptx"><button>Download NIC mk2</button></a>

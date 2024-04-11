@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2family=Orbitron:wght@842&display=swap')
+
+
+
+.content{
+font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+@media only screen and (max-width: 60px) {
+  .content {
+    word-break: break-all;
+  }
+}
